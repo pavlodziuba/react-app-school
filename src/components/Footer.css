@@ -1,0 +1,86 @@
+:root {
+  --footer-bg-color: white;
+}
+.footer-content {
+  height: 100px;
+}
+.footer-2 .logo {
+  position: relative;
+  margin: 0px;
+  height: 70px;
+  padding-bottom: 20px;
+}
+.footer-2 .logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: 170px;
+  padding-top: 10px;
+  background-color: var(--footer-bg-color);
+  border-top: 1px solid #d9d9d9;
+}
+
+.footer-1 {
+  width: 300px;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5vw;
+}
+
+.footer-2 {
+  width: 300px;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content {
+  flex-grow: 1; /* This will take all available space, pushing footer down */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column; /* Stack contact info vertically */
+  align-items: left; /* Center the items horizontally */
+  gap: 10px; /* Space between each item */
+}
+
+.contact-info p {
+  margin: 0; /* Remove default margin */
+  font-size: 16px; /* Adjust font size */
+}
+
+.address {
+  font-weight: bold; /* Make the address stand out */
+}
+
+.phone,
+.email {
+  font-size: 14px; /* Slightly smaller font for phone and email */
+}
+
+.phone a,
+.email a {
+  color: #ffffff; /* White color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.phone a:hover,
+.email a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+}

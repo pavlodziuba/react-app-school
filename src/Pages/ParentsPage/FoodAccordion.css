@@ -1,0 +1,39 @@
+/* FileIconsBlock.css */
+.file-icons-block {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row;
+  justify-content: space-around; /* Spread items evenly with space between */
+  align-items: center; /* Center items vertically */
+  padding: 20px;
+  gap: 20px; /* Add spacing between items */
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+}
+
+.file-item {
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center;
+}
+
+.file-icon {
+  font-size: 40px; /* Set size of the icon */
+  margin-bottom: 10px; /* Add space between icon and text */
+}
+
+.file-label {
+  font-size: 14px; /* Adjust text size */
+  color: #333; /* Set text color */
+}
+
+.file-icons-block a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color from the parent */
+}
+
+@media (max-width: 768px) {
+  .file-icons-block {
+    flex-direction: column;
+  }
+}

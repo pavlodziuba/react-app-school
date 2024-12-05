@@ -1,0 +1,23 @@
+:root {
+  --text-block-color: #f178b6;
+}
+
+.text-block {
+  width: 100%;
+  height: 100px; /* Full viewport height */
+  background-image: url("./bg-top.jpg"); /* Replace with your image URL */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-transform: uppercase; /* Make all letters uppercase */
+  color: white; /* Optional: You can change the text color to make it more visible on the background */
+  font-weight: bold; /* Optional: Makes the text bold for better visibility */
+}
+
+.centered-text {
+  color: var(--text-block-color); /* Text color */
+  font-size: 3.5vh; /* Text size */
+  font-weight: bold;
+}

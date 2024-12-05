@@ -1,0 +1,18 @@
+/* Reset margin and padding to eliminate browser defaults */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up a basic font family for the entire document */
+body {
+  font-family: "Arial", sans-serif; /* You can change this to a font of your choice */
+  line-height: 1.6; /* Good default line height */
+  background-color: #f1f1f1;
+  color: #333; /* Dark gray text color */
+  -webkit-font-smoothing: antialiased; /* Smooth font rendering */
+  -moz-osx-font-smoothing: grayscale; /* Smooth font rendering for Firefox on macOS */
+}

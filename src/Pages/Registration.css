@@ -1,0 +1,36 @@
+:root {
+  --header-color: #7879f1;
+  --second-navigation-bg-color: white;
+}
+
+.program-container {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--second-navigation-bg-color);
+  padding: 5px;
+}
+
+.program-container_flex1 {
+  padding-top: 24px;
+  flex: 2;
+}
+.program-container_flex2 {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .food-container {
+    flex-direction: column;
+  }
+  .program-container {
+    flex-direction: column;
+  }
+  .program-container_flex1 {
+    padding-top: 0px;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}

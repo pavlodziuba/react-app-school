@@ -9,8 +9,10 @@ import Header from "./components/Header";
 import PageName from "./components/PageName";
 import Container from "./components/Container";
 import Footer from "./components/Footer";
-import HomePage from "./components/Pages/HomePage";
-import ParentsPage from "./components/Pages/ParentsPage/ParentsPage";
+import HomePage from "./Pages/HomePage";
+import About from "./Pages/About";
+import ParentsPage from "./Pages/ParentsPage/ParentsPage";
+import Registration from "./Pages/Registration";
 
 // Custom hook to track the current page name
 const usePageName = () => {
@@ -37,7 +39,7 @@ const App = () => {
         <PageNameWithRoute />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<AboutUS />} />
           <Route path="/parents" element={<Parents />} />
           <Route path="/news" element={<News />} />
           <Route path="/zapis" element={<Zapis />} />
@@ -57,9 +59,9 @@ const PageNameWithRoute = () => {
 
 // Route Components
 const Home = () => <HomePage />;
-const About = () => <div>O nás</div>;
+const AboutUS = () => <About />;
 const Contact = () => <div>Kontakt</div>;
-const Zapis = () => <div>Zápis</div>;
+const Zapis = () => <Registration />;
 const Parents = () => <ParentsPage />;
 const News = () => <div>Oznamy</div>;
 

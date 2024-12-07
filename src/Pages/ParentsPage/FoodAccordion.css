@@ -20,6 +20,7 @@
 .file-icon {
   font-size: 40px; /* Set size of the icon */
   margin-bottom: 10px; /* Add space between icon and text */
+  max-height: 70px;
 }
 
 .file-label {

@@ -18,6 +18,34 @@
   flex: 1;
 }
 
+.file-icon {
+  margin-bottom: 0px;
+  max-height: 70px;
+}
+
+.file-label {
+  color: var(--text-block-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.file-link {
+  text-decoration: none;
+}
+
+.text-container {
+  padding: 20px;
+}
+
+.text-container a {
+  color: var(--text-block-color);
+  font-weight: bold;
+}
+
+.text-container ul {
+  padding-left: 20px;
+}
+
 @media (max-width: 768px) {
   .food-container {
     flex-direction: column;

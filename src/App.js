@@ -12,7 +12,8 @@ import Footer from "./components/Footer";
 import HomePage from "./Pages/HomePage";
 import About from "./Pages/About";
 import ParentsPage from "./Pages/ParentsPage/ParentsPage";
-import Registration from "./Pages/Registration";
+import Registration from "./Pages/RegistrationPage/Registration";
+import ContactPage from "./Pages/ContactPage/ContactPage";
 
 // Custom hook to track the current page name
 const usePageName = () => {
@@ -60,7 +61,7 @@ const PageNameWithRoute = () => {
 // Route Components
 const Home = () => <HomePage />;
 const AboutUS = () => <About />;
-const Contact = () => <div>Kontakt</div>;
+const Contact = () => <ContactPage />;
 const Zapis = () => <Registration />;
 const Parents = () => <ParentsPage />;
 const News = () => <div>Oznamy</div>;

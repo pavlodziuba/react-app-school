@@ -1,7 +1,7 @@
 import React from "react";
 import "./Registration.css";
 import RegistrationFormToSchool from "./RegistrationFormToSchool";
-import FullWidthText from "../components/FullWidthText";
+import FullWidthText from "../../components/FullWidthText";
 
 const Registration = () => {
   return (

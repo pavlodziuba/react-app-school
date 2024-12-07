@@ -44,8 +44,9 @@
   align-items: center;
   flex-direction: column;
 }
-.content {
-  flex-grow: 1; /* This will take all available space, pushing footer down */
+.empty-content {
+  flex-grow: 1;
+  background-color: var(--footer-bg-color);
 }
 
 .contact-info {

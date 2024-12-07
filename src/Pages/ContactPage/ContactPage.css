@@ -1,0 +1,13 @@
+.text-container_contact {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.text-container_contact a {
+  color: var(--text-block-color);
+  font-weight: bold;
+}

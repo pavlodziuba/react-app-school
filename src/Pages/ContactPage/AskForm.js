@@ -3,14 +3,14 @@ import {
   TextField,
   Button,
   Box,
-  Typography,
   TextareaAutosize,
-  Snackbar, // Import Snackbar for the popup message
-  Alert, // Import Alert to show the success message
+  Typography,
+  Snackbar,
+  Alert,
 } from "@mui/material";
-import "./RegistrationFormOnProgram.css";
+import "../ParentsPage/RegistrationFormOnProgram.css";
 
-const RegistrationForm = () => {
+const AskForm = () => {
   // State to hold form values
   const [formData, setFormData] = useState({
     username: "",
@@ -36,14 +36,16 @@ const RegistrationForm = () => {
     e.preventDefault();
     // Perform form validation and submission logic here
     console.log("Form data submitted:", formData);
+
+    // Show success message via Snackbar
+    setOpenSnackbar(true);
+
     setFormData({
       username: "",
       surname: "",
       email: "",
       message: "",
     });
-    // Show success message via Snackbar
-    setOpenSnackbar(true);
   };
 
   // Close Snackbar after some time
@@ -55,7 +57,7 @@ const RegistrationForm = () => {
     <div className="registration-program">
       <Box sx={{ maxWidth: 400, margin: "auto", padding: 3 }}>
         <Typography variant="h4" align="center" gutterBottom>
-          Registrácia do programu
+          Napíšte nám
         </Typography>
 
         <form onSubmit={handleSubmit}>
@@ -155,4 +157,4 @@ const RegistrationForm = () => {
   );
 };
 
-export default RegistrationForm;
+export default AskForm;

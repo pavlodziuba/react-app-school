@@ -1,0 +1,18 @@
+.content {
+  background-color: var(--footer-bg-color);
+}
+
+.all-news-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.all-news-button button {
+  background-color: var(--header-color);
+  border-radius: 8px !important;
+  border: 1px solid black !important;
+  text-transform: none;
+}

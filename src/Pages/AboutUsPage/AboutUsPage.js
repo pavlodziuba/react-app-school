@@ -1,7 +1,7 @@
 import React from "react";
-import "./About.css";
-import Classes from "./ParentsPage/Classes";
-import FullWidthText from "../components/FullWidthText";
+import "./AboutUsPage.css";
+import Classes from "../ParentsPage/Classes";
+import FullWidthText from "../../components/FullWidthText";
 
 const About = () => {
   return (

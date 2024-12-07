@@ -95,7 +95,7 @@ const Registration = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_901_2655)">
+                  <g clipPath="url(#clip0_901_2655)">
                     <path
                       d="M26.8901 19.3101C29.2701 20.0901 31.0001 22.3501 31.0001 25.0001C31.0001 28.3101 28.3101 31.0001 25.0001 31.0001C21.6901 31.0001 19.0001 28.3101 19.0001 25.0001C19.0001 21.6901 21.6901 19.0001 25.0001 19.0001C25.6601 19.0001 26.3001 19.1101 26.8901 19.3101Z"
                       fill="#ffff"
@@ -111,9 +111,9 @@ const Registration = () => {
                     <path
                       d="M27 16V11C27 11 27 10 26 9L19 2C18 1 17 1 17 1M17 1H2C2 1 1 1 1 2V30C1 30 1 31 2 31H18M17 1V10C17 10 17 11 18 11H23M27 25L25 27M25 27L23 25M25 27V23M31 25C31 21.687 28.313 19 25 19C21.687 19 19 21.687 19 25C19 28.313 21.687 31 25 31C28.313 31 31 28.313 31 25Z"
                       stroke="#000000"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </g>
                   <defs>

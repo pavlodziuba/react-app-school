@@ -8,12 +8,12 @@ const Footer = () => {
       <div className="empty-content"></div>
       <div className="footer">
         <div className="footer-1">
-          <div class="contact-info">
-            <p class="address"> Zupkova 718/37, Košice</p>
-            <p class="phone">
+          <div className="contact-info">
+            <p className="address"> Zupkova 718/37, Košice</p>
+            <p className="phone">
               <strong>Tel.</strong> riaditeľka MŠ: 055 / 671 34 72 0907 900 14
             </p>
-            <p class="email">
+            <p className="email">
               <strong>Email:</strong> zupkova37@centrum.sk
             </p>
           </div>
@@ -47,7 +47,7 @@ const Footer = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="#">
+                  <g clipPath="#">
                     <path
                       d="M19.615 3.184C16.011 2.938 7.984 2.939 4.385 3.184C0.488 3.45 0.029 5.804 0 12C0.029 18.185 0.484 20.549 4.385 20.816C7.985 21.061 16.011 21.062 19.615 20.816C23.512 20.55 23.971 18.196 24 12C23.971 5.815 23.516 3.451 19.615 3.184ZM9 16V8L17 11.993L9 16Z"
                       fill="#F178B6"

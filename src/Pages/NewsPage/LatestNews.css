@@ -1,0 +1,12 @@
+.latest-news-container {
+  margin-top: 15px;
+  height: 100% width 100%;
+  padding: 65px;
+  padding-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .latest-news-container {
+    padding: 15px;
+  }
+}

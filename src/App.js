@@ -9,13 +9,13 @@ import Header from "./components/Header";
 import PageName from "./components/PageName";
 import Container from "./components/Container";
 import Footer from "./components/Footer";
-import HomePage from "./Pages/HomePage";
-import About from "./Pages/About";
+import HomePage from "./Pages/HomePage/HomePage";
+import AboutUsPage from "./Pages/AboutUsPage/AboutUsPage";
 import ParentsPage from "./Pages/ParentsPage/ParentsPage";
 import Registration from "./Pages/RegistrationPage/Registration";
 import ContactPage from "./Pages/ContactPage/ContactPage";
+import NewsPage from "./Pages/NewsPage/NewsPage";
 
-// Custom hook to track the current page name
 const usePageName = () => {
   const location = useLocation();
 
@@ -60,10 +60,10 @@ const PageNameWithRoute = () => {
 
 // Route Components
 const Home = () => <HomePage />;
-const AboutUS = () => <About />;
+const AboutUS = () => <AboutUsPage />;
 const Contact = () => <ContactPage />;
 const Zapis = () => <Registration />;
 const Parents = () => <ParentsPage />;
-const News = () => <div>Oznamy</div>;
+const News = () => <NewsPage />;
 
 export default App;

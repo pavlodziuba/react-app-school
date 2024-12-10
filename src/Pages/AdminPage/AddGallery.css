@@ -116,6 +116,9 @@
 .file-list {
   margin-top: 20px;
 }
+.file-list ul {
+  padding: 0px;
+}
 
 .file-item {
   display: flex;
@@ -123,7 +126,11 @@
   align-items: center;
   margin-bottom: 10px;
 }
-
+@media (max-width: 768px) {
+  .file-list li {
+    flex-direction: column;
+  }
+}
 .delete-file-button {
   background-color: #f44336;
   color: white;

@@ -1,6 +1,5 @@
 import React from "react";
 import "./HomePage.css";
-import { Link } from "react-router-dom";
 import FullWidthText from "../../components/FullWidthText";
 import img1 from "../../photos/2245_img-3_3_2_b.jpg";
 import img2 from "../../photos/2265_img-3_1_1_b.jpg";

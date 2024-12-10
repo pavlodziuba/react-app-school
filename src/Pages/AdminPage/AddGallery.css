@@ -1,0 +1,139 @@
+.add-gallery-content {
+  padding: 50px;
+}
+
+.drag-and-drop-block {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.drag-and-drop-block.dragging {
+  background-color: #e0f7fa;
+  border-color: #009688;
+}
+
+.drag-and-drop-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.drag-and-drop-content svg {
+  margin-top: 20px;
+  fill: #555;
+}
+
+.drag-and-drop-content p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+.drag-and-drop-block:hover {
+  background-color: #f1f1f1;
+}
+
+.add-gallery-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.styled-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: var(--header-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.styled-button:hover {
+  background-color: #891ae4;
+  transform: scale(1.05);
+}
+
+.styled-button:focus {
+  outline: none;
+}
+
+.styled-button:active {
+  background-color: #891ae49c;
+}
+
+.add-name-for-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.styled-input {
+  padding: 12px 20px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.styled-input::placeholder {
+  color: #aaa;
+}
+
+.styled-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.styled-input:hover {
+  border-color: #007bff;
+}
+
+.grey-text {
+  color: grey !important;
+  font-size: 14px !important;
+}
+
+.file-list {
+  margin-top: 20px;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.delete-file-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.delete-file-button:hover {
+  background-color: #d32f2f;
+}

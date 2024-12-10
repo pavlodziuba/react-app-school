@@ -1,6 +1,30 @@
-.home {
-  display: flex;
+.photogalery {
   width: 100%;
-  height: 100px;
-  background-color: brown;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+}
+
+.photogalery_photo img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+}
+
+.photogalery_photo img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4); /* Intensified shadow on hover */
+}
+
+@media (max-width: 768px) {
+  .photogalery {
+    flex-direction: column;
+  }
 }

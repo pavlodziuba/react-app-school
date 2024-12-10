@@ -5,7 +5,7 @@ import ProgramAccordion from "./ProgramsAccordion";
 import FoodAccordion from "./FoodAccordion";
 import Classes from "./Classes";
 import FullWidthText from "../../components/FullWidthText";
-
+import { Link } from "react-router-dom";
 const ParentsPage = () => {
   return (
     <div className="content-parents">
@@ -13,6 +13,7 @@ const ParentsPage = () => {
         <a href="#stravovanie">Stravovanie</a>
         <a href="#programy">Programy</a>
         <a href="#triedy">Triedy</a>
+        <Link to="/zapis">Zápis do školy</Link>
       </div>
       <FullWidthText id="stravovanie" text="STRAVOVANIE" />
       <div className="food-container">

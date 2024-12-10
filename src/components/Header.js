@@ -1,21 +1,29 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Header.css"; // Import CSS file for styling
 import logo from "./logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation(); // Get current route
-
+  const navigate = useNavigate(); // Get the navigate function
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   // Close the menu when a link is clicked
   const handleLinkClick = () => setMenuOpen(false);
 
+  // Handle log out (you can modify this function to perform the actual logout logic)
+  const handleLogout = () => {
+    console.log("User logged out");
+    navigate("/");
+  };
+
   return (
     <header className="header">
       <div className="logo">
-        <img src={logo} alt="logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <nav className={`nav ${menuOpen ? "open" : ""}`}>
         <Link
@@ -70,7 +78,14 @@ const Header = () => {
         >
           Kontakt
         </Link>
+        {/* Conditionally render the logout button on the /admin page */}
+        {location.pathname === "/admin" && (
+          <button className="logout-button nav-link" onClick={handleLogout}>
+            Odhlásiť sa
+          </button>
+        )}
       </nav>
+
       <button className="menu-toggle" onClick={toggleMenu}>
         ☰
       </button>

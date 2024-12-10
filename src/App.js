@@ -15,6 +15,7 @@ import ParentsPage from "./Pages/ParentsPage/ParentsPage";
 import Registration from "./Pages/RegistrationPage/Registration";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import NewsPage from "./Pages/NewsPage/NewsPage";
+import AdminPage from "./Pages/AdminPage/AdminPage";
 
 const usePageName = () => {
   const location = useLocation();
@@ -27,6 +28,7 @@ const usePageName = () => {
     "/news": "Oznamy",
     "/zapis": "Zápis",
     "/contact": "Kontakt",
+    "/admin": "Admin",
   };
 
   return pageNames[location.pathname] || "Unknown Page";
@@ -45,6 +47,7 @@ const App = () => {
           <Route path="/news" element={<News />} />
           <Route path="/zapis" element={<Zapis />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/admin" element={<AdminPage />} />
         </Routes>
         <Footer />
       </Container>
@@ -53,7 +56,12 @@ const App = () => {
 };
 
 const PageNameWithRoute = () => {
+  const location = useLocation();
   const pageName = usePageName();
+
+  if (location.pathname === "/admin") {
+    return null;
+  }
 
   return <PageName pageName={pageName} />;
 };
